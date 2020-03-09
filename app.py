@@ -20,9 +20,9 @@ def predict():
 		to_predict_list = list(map(int, to_predict_list)) 
 		result = ValuePredictor(to_predict_list)		 
 		if int(result)== 1: 
-			prediction ='booking'
+			prediction ='Potential Customer'
 		else: 
-			prediction ='not booking'			
+			prediction ='Not a Potential Customer'			
 		return render_template("index.html", prediction_text = prediction)
 
 
